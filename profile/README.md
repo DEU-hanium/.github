@@ -11,37 +11,37 @@
 
 ### 아키텍처
 
-![image](../images/architecture.png)
+![image](https://drive.google.com/uc?id=18NggB4dBvqAYDxQD4-lvyhjf9AJYn2eX)
 
 ### 기능
 
 1. 차단 IP Slack 알림
-
-   ![Alt text](image.png)
+   
+    ![image](https://drive.google.com/uc?id=1Cxl5zqTSKUcPvZ4ZrtvvlPRmUBUatBV4)
 
 2. 차단 IP 목록 출력
-  
-    ![Alt text](image-2.png)
 
-    ![Alt text](image-1.png)
+    ![image](https://drive.google.com/uc?id=1GQjPcCTSN3rfIzUSJzE5HRwg95izHXta)
+
+    ![image](https://drive.google.com/uc?id=17IGGyHLRWzmcMRPtrIA7ZHqxFvKkI7wJ)
 
 3. 차단 IP 해제
    
-    ![Alt text](image-3.png)
+    ![image](https://drive.google.com/uc?id=1qUZW5AC8e5yl4fY6fecEsrWXjbJC-R8Q)
 
 4. 허용된 IP 목록 출력
 
-    ![Alt text](image-4.png)
+    ![image](https://drive.google.com/uc?id=1ajnL7PRhHPbVa_blNb2Dusvx5CjyQbdP)
 
-    ![Alt text](image-5.png)
+    ![image](https://drive.google.com/uc?id=1hU6_lZ5VVtFF5cIv6uAgRXiYWJHZnHUj)
 
 5. 차단된 트래픽 시각화
 
-    ![Alt text](image-6.png)
+    ![image](https://drive.google.com/uc?id=1umCfIjr784imNll2-dTayKWzsS6PColW)
 
 6. 차단된 IP 위치 정보 시각화
 
-    ![Alt text](image-7.png)
+    ![image](https://drive.google.com/uc?id=13DQ-U9A9joA6_-7TlDvDYGMImvhURxG0)
 
 ## 기능별 구현 내용
 
