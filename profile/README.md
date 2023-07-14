@@ -45,7 +45,7 @@
 
 ## 기능별 구현 내용
 
-- [ALB 트래픽 로그 OpenSearch에 적재하기](https://github.com/DEU-hanium/ELBLogs-to-OpenSearch)
+- [ALB 트래픽 로그 OpenSearch에 적재하기](https://github.com/DEU-hanium/.gitub/profile/README.md)
 - OpenSearch에 적재된 로그 데이터를 통해 악성 크롤링 탐지하기(업로드 예정)
 - FastAPI 서버로 WAF 접근 차단하기&Slack api 구현(업로드 예정)
 - Opensearch Kibana 시각화 하기(업로드 예정)
