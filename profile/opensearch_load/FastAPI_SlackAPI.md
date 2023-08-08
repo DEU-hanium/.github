@@ -1,14 +1,14 @@
 # 1. Fast API
 
 ## 1.1 Fast API 인스턴스 추가
-![](https://www.notion.so/09c0f8a41b264f7b8beaeb68a091f0e3?pvs=4#bdf2c75e14494201ae475b6d9de60ade)
+![]('../picture/1.png')
 > - t3.medium
 > - 키 페어 생성
 > - 보안그룹 추가 - ssh, http, https, 8000 포트
-![](https://www.notion.so/09c0f8a41b264f7b8beaeb68a091f0e3?pvs=4#b38c8aa0b9004c58ab0c268e2d80effc)
+![]('../picture/2.png')
 
 ## 1.2 ec2용 IAM 생성
-![](https://www.notion.so/09c0f8a41b264f7b8beaeb68a091f0e3?pvs=4#e19856b264c546409b37353734ba97eb)
+![]('../picture/3.png')
 > - admin - AdministratorAccess
 > - 인스턴스 - 보안 - IAM 역할 수정
 
@@ -73,7 +73,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 > - incoming webhooks - on
 > - oauth & permissions - workspace 복사해서 .env slack_token에 넣기
 > - lambdaRouter.py 채널명 변경
-![](https://www.notion.so/09c0f8a41b264f7b8beaeb68a091f0e3?pvs=4#2fc88a342d984d7f9d26d62f797603c5)
+![]('../picture/4.png')
 
 # 4. insert-data 생성
 
@@ -224,13 +224,13 @@ create table require_list (
 > opensearch-to-lambda 환경변수에서 DB: http://fastapi-ec2-ip:8000으로 변경
 
 # 7. slack 설정 추가
-![](https://www.notion.so/09c0f8a41b264f7b8beaeb68a091f0e3?pvs=4#0f7a768f48904966a078bda7f60bf5e1)
+![]('../picture/5.png')
 > 위와 같이 해당 ip가 차단된 것을 확인할 수 있음
 
 ## 7.1 권한 설정
 > - OAuth - scopes - add an OAuth Scope - chat:write 권한 주기
 > - User Token Scopes - admin, chat write 권한 부여
-![](https://www.notion.so/09c0f8a41b264f7b8beaeb68a091f0e3?pvs=4#547a8e5cc1e84dd5a88b4c425caa983f)
+![](h'../picture/6.png')
 
 ## 7.2 .env 파일 변경
 > .env slack_token에 user OAuth Token 넣어주기
@@ -238,5 +238,5 @@ create table require_list (
 ## 7.3 create New Command
 > - slash commands - create New Command
 > - 아래의 사진처럼 채워주기
-![](https://www.notion.so/09c0f8a41b264f7b8beaeb68a091f0e3?pvs=4#006510e91b3d435a976cb91664b4ca0f)
-![](https://www.notion.so/09c0f8a41b264f7b8beaeb68a091f0e3?pvs=4#3c15420ec4b44869bfa77ba3d934c484)
+![]('../picture/7.png')
+![]('../picture/8.png')
