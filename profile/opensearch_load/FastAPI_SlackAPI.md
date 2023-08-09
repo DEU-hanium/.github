@@ -1,14 +1,14 @@
 # 1. Fast API
 
 ## 1.1 Fast API 인스턴스 추가
-![]('../picture/1.png')
+![](https://drive.google.com/file/d/1Uo_fDAsiqlQsheAIkAOX4r0HZmrDcmbt/view?usp=drive_link)
 > - t3.medium
 > - 키 페어 생성
 > - 보안그룹 추가 - ssh, http, https, 8000 포트
-![]('../picture/2.png')
+![](https://drive.google.com/file/d/1Lw_mRYkRRiRAfU9bC1FS41Cq0vXwlpeX/view?usp=drive_link)
 
 ## 1.2 ec2용 IAM 생성
-![]('../picture/3.png')
+![](https://drive.google.com/file/d/1IdJALecEeTCP0vmgfd2ANhhh_t_j4USu/view?usp=drive_link)
 > - admin - AdministratorAccess
 > - 인스턴스 - 보안 - IAM 역할 수정
 
@@ -73,7 +73,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 > - incoming webhooks - on
 > - oauth & permissions - workspace 복사해서 .env slack_token에 넣기
 > - lambdaRouter.py 채널명 변경
-![]('../picture/4.png')
+![](https://drive.google.com/file/d/1WKKZCGduS7txlXy4xZxkguyxS4O06WcR/view?usp=drive_link)
 
 # 4. insert-data 생성
 
@@ -224,13 +224,13 @@ create table require_list (
 > opensearch-to-lambda 환경변수에서 DB: http://fastapi-ec2-ip:8000으로 변경
 
 # 7. slack 설정 추가
-![]('../picture/5.png')
+![](https://drive.google.com/file/d/119jLSVgM6rbTxKtkji37rc5gNSwP53tw/view?usp=drive_link)
 > 위와 같이 해당 ip가 차단된 것을 확인할 수 있음
 
 ## 7.1 권한 설정
 > - OAuth - scopes - add an OAuth Scope - chat:write 권한 주기
 > - User Token Scopes - admin, chat write 권한 부여
-![](h'../picture/6.png')
+![](https://drive.google.com/file/d/1YFHZVA6of3ng_Y9tVDnSis7aFKM-YUaM/view?usp=drive_link)
 
 ## 7.2 .env 파일 변경
 > .env slack_token에 user OAuth Token 넣어주기
@@ -238,5 +238,5 @@ create table require_list (
 ## 7.3 create New Command
 > - slash commands - create New Command
 > - 아래의 사진처럼 채워주기
-![]('../picture/7.png')
-![]('../picture/8.png')
+![](https://drive.google.com/file/d/1fMoRU-_o0FaPmTKzVDXS6utlX6u7kUgY/view?usp=drive_link)
+![](https://drive.google.com/file/d/1klop2R3cgRRgORuf6qhBXIpUOTrukHhw/view?usp=drive_link)
