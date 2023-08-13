@@ -2,14 +2,25 @@
 
 ## 1. RDS를 이용한 데이터베이스 생성
 
+<<<<<<< Updated upstream:profile/crawling_detection/crawling_detection.md
+=======
+### 1.1 데이터베이스 세팅
+
+>>>>>>> Stashed changes:profile/detect_crawling/detect_crawling.md
 - mysql 사용<br>
   > ![image](https://github.com/DEU-hanium/detect_crawling/assets/113816822/211730a8-036a-406d-a8cc-66a0ed5d4cf2)<br>
 - 3306포트 사용 <br>
   > ![image](https://github.com/DEU-hanium/detect_crawling/assets/113816822/2f9b5601-ee8d-4c8f-a4df-6accbd562d05)<br>
 
+<<<<<<< Updated upstream:profile/crawling_detection/crawling_detection.md
 ## 1.1 TABLE 생성
 
 ```
+=======
+### 1.2 TABLE 생성 SQL문
+
+```sql
+>>>>>>> Stashed changes:profile/detect_crawling/detect_crawling.md
 CREATE TABLE ban_list (
 ip varchar(20) PRIMARY KEY,
 memo varchar(20),
@@ -17,6 +28,7 @@ created_at timestamp DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
+<<<<<<< Updated upstream:profile/crawling_detection/crawling_detection.md
 ```
 CREATE TABLE require_list (
 ip varchar(20) PRIMARY KEY,
@@ -31,8 +43,31 @@ created_at timestamp DEFAULT CURRENT_TIMESTAMP);
 - 트리거 추가<br>
   > ![image](https://github.com/DEU-hanium/detect_crawling/assets/113816822/82539bd8-1255-46bf-8a7d-62429931e8d8)<br>
 - 소스코드 추가<lambda-function><br>
-
+=======
+```sql
+ CREATE TABLE require_list (
+ ip varchar(20) PRIMARY KEY,
+ memo varchar(20),
+ created_at timestamp DEFAULT CURRENT_TIMESTAMP
+);
 ```
+
+## 2. Lambda를 이용해 opensearch-to-lambda
+>>>>>>> Stashed changes:profile/detect_crawling/detect_crawling.md
+
+### 2.1 lambda 생성<br>
+
+- 람다 세팅
+
+  > ![image](https://github.com/DEU-hanium/detect_crawling/assets/113816822/244e725e-a6e1-43c4-9aed-588993af702e)<br>
+
+- 트리거 추가
+
+  > ![image](https://github.com/DEU-hanium/detect_crawling/assets/113816822/82539bd8-1255-46bf-8a7d-62429931e8d8)<br>
+
+- 소스코드 추가
+
+```python:lambda_function.py
 import boto3
 import requests
 from requests_aws4auth import AWS4Auth
@@ -161,11 +196,21 @@ def lambda_handler(event, context):
         con.commit()
         con.close()
 ```
+<<<<<<< Updated upstream:profile/crawling_detection/crawling_detection.md
 
 ## 2.2 Lambda 코드 업로드
 
 - 위 코드에서 Lambda Python 기본 내장 모듈은 boto3, gzip, re 이고 나머지 **requests, requests_aws4auth 모듈은 내장모듈이 아니므로 직접 pip install 하여 압축해서 올려야된다.**
 - lambda 코드가 있는 폴더로 이동
+=======
+
+### 2.2 Lambda 코드 업로드
+
+- 위 코드에서 Lambda Python 기본 내장 모듈은 boto3, gzip, re 이고 나머지 **requests, requests_aws4auth 모듈은 내장모듈이 아니므로 직접 pip install 하여 압축해서 올려야된다.**
+
+- lambda 코드가 있는 폴더로 이동
+- 생성된 zip파일과 함께 람다 함수를 생성합니다.
+>>>>>>> Stashed changes:profile/detect_crawling/detect_crawling.md
 
 ```
 bash
