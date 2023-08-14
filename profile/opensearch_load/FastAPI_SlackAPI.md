@@ -214,6 +214,9 @@ def lambda_handler(event, context):
         print(r.text)
 ```
 
+## 5.5 lambdaRouter 코드 변경
+> fastapi - LambdaRouter.py에서 waf에 IP 추가하기
+
 # 6. opensearch to lambda test
 
 ## 6.1 모듈 수정
