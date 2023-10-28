@@ -9,40 +9,16 @@
 
 ## 프로젝트 결과
 
+### 시연영상
+
+- https://youtu.be/G1z5hg_Jb-o?si=_dqBxe-udsReKI0O
+
 ### 아키텍처
 
 ![architecture drawio](https://github.com/DEU-hanium/.github/assets/57895643/23cecc4e-81fc-4d4c-ae34-f3ed8c46b6bc)
 
 
-### 기능
 
-1. 차단 IP Slack 알림
-   
-    ![image](https://drive.google.com/uc?id=1Cxl5zqTSKUcPvZ4ZrtvvlPRmUBUatBV4)
-
-2. 차단 IP 목록 출력
-
-    ![image](https://drive.google.com/uc?id=1GQjPcCTSN3rfIzUSJzE5HRwg95izHXta)
-
-    ![image](https://drive.google.com/uc?id=17IGGyHLRWzmcMRPtrIA7ZHqxFvKkI7wJ)
-
-3. 차단 IP 해제
-   
-    ![image](https://drive.google.com/uc?id=1qUZW5AC8e5yl4fY6fecEsrWXjbJC-R8Q)
-
-4. 허용된 IP 목록 출력
-
-    ![image](https://drive.google.com/uc?id=1ajnL7PRhHPbVa_blNb2Dusvx5CjyQbdP)
-
-    ![image](https://drive.google.com/uc?id=1hU6_lZ5VVtFF5cIv6uAgRXiYWJHZnHUj)
-
-5. 차단된 트래픽 시각화
-
-    ![image](https://drive.google.com/uc?id=1umCfIjr784imNll2-dTayKWzsS6PColW)
-
-6. 차단된 IP 위치 정보 시각화
-
-    ![image](https://drive.google.com/uc?id=13DQ-U9A9joA6_-7TlDvDYGMImvhURxG0)
 
 ## 기능별 구현 내용
 
