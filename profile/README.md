@@ -11,7 +11,8 @@
 
 ### 아키텍처
 
-![image](https://drive.google.com/uc?id=18NggB4dBvqAYDxQD4-lvyhjf9AJYn2eX)
+![architecture drawio](https://github.com/DEU-hanium/.github/assets/57895643/23cecc4e-81fc-4d4c-ae34-f3ed8c46b6bc)
+
 
 ### 기능
 
